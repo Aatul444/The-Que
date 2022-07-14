@@ -1,0 +1,20 @@
+.item2 
+{
+    grid-area: menu;
+    background-color: #3066ED;
+}
+
+.item3 { grid-area: main; }
+.item4 
+{
+   grid-area: right;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right';
+  gap: 0px;
+  
+}

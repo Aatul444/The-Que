@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="appLogo">
+        <div class="logo"><img src="assets/logo.svg" /></div>
+        <div class="appName">{{title}}</div>
+    </div>
+
+    <div class="menuItems">
+        <div class="sideMenus">
+            <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" orientation="vertical">
+                <li ngbNavItem={{item.title}} *ngFor="let item of menuItems">
+                    <a ngbNavLink class="sidebar-item">
+                        <img class="icon" [src]="item.icon" alt="{{item.title}}" />
+                        {{item.title}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="sidebarBottom">
+        <div class="userLogo"><a class="shortName">VK</a></div>
+        <div class="userName">{{userName}}</div>
+        <div class="signout"><img src="assets/logout.svg"></div>
+    </div>
+</div>

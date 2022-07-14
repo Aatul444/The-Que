@@ -1,0 +1,45 @@
+.container {
+    .me-2 {
+        width: 8px;
+        height: 8px;
+    }
+
+    .system {
+        width: 24px;
+        height: 24px;
+        background: #FF6E65;
+        border-radius: 50%;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 12px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        padding-left: 5px;
+    }
+    .accountFooter {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+        position: fixed;
+        background-color: #3066ED;
+        bottom: 0px;
+        right: 0px;
+        width: 224px;
+        height: 64px;
+        color: white;
+        .plus {
+            border: 1px solid;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            justify-content: center;
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="panelHeader">
+       <div class="col">
+            <a class="panelLocation">Location</a>
+          <div ngbDropdown class="d-inline-block">
+            <button type="button" class="dropdownBtn" id="dropdownBasic1" ngbDropdownToggle>Tolchav</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1" >
+              <button ngbDropdownItem *ngFor="let item of dropdownItems" class="dropdownList">{{item}}</button>
+          </div>
+        </div>
+    <a class="panelOptions">Options <img src="assets/dots.svg" alt="Options"></a>
+    </div>
+</div>

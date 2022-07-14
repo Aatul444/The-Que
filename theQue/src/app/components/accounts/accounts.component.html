@@ -1,0 +1,47 @@
+<div class="container">
+<div class="accountsHeader">
+    <img src="assets/account.svg">
+    <div class="text">Accounts</div>
+</div>
+<div class="searchTab">
+    <form>
+        <div class="mb-3 row">
+            <img src="assets/searchIcon.svg" alt="Search Tab">
+          <div class="col-xs-3 col-sm-auto">
+            <!-- <input id="table-filtering-search" class="form-control" type="text" [formControl]="filter"> -->
+          </div>
+        </div>
+      </form>
+    <!-- <div class="search"><img src="assets/searchIcon.svg" alt="Search Tab"><input type="text"></div> -->
+    <div class="filter"><input type="text"><img src="assets/filterIcon.svg" alt="Filter Tab"></div>
+</div>
+<div class="tableNames">
+  
+      
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th scope="col">Q#<img src="assets/tableIcon.svg"></th>
+          <th scope="col">Name<img src="assets/tableIcon.svg"></th>
+          <th scope="col">Phone<img src="assets/tableIcon.svg"></th>
+          <th scope="col">Time left<img src="assets/tableIcon.svg"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of USER$ | async; index as i">
+          <th scope="row"><div class="system">Q1</div></th>
+          <td>
+              <ngb-highlight [result]="item.user" [term]="filter.value"></ngb-highlight>
+              <img src="assets/assignedSystem.svg" class="me-2">
+          </td>
+          <td><ngb-highlight [result]="item.phone | number" [term]="filter.value"></ngb-highlight></td>
+          <td><ngb-highlight [result]="item.time | number" [term]="filter.value"></ngb-highlight></td>
+        </tr>
+        </tbody>
+      </table>
+</div>
+<div class="accountFooter">
+    <div class="plus">+</div>
+    <a>ADD NEW USER</a>
+</div>
+</div>

@@ -1,0 +1,89 @@
+.container {
+    background-color: #3066ED;
+    height: 100vh;
+    padding-right: 0;
+    padding-left: 0;
+
+}
+
+.appLogo {
+    display: flex;
+    width: 60%;
+    // height: 64px;
+    color: white;
+    margin: 15px 0 0 20px;
+}
+
+.logo {
+    /* margin-top: 16px; */
+}
+
+.appName {
+    font-family: Avenir Next;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    margin: 0 0 0 20.08px;
+    width: 50%;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+}
+
+.nav-pills {
+    margin: 10px 0 10px 0;
+
+}
+
+.sidebarBottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    border-top-style: solid;
+    border-top-color: #7EA1F6;
+    position: fixed;
+    bottom: 0px;
+    width: 224px;
+    height: 64px;
+    
+
+    .userLogo {
+        background-color: white;
+        text-align: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+
+        .shortName {
+            font-family: Proxima Nova;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 12px;
+            letter-spacing: 0em;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            color: #3066ED;
+            padding: 11px 0 0 5px;
+
+        }
+    }
+
+   
+}
+.userName {
+    display: flex;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
